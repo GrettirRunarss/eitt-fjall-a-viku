@@ -9,50 +9,50 @@
   {
     "id": 2,
     "name": "Faxi",
-    "lat": null,
-    "lng": null,
+    "lat": 65.63109034100295,
+    "lng": -15.644531250000002,
     "facebookUrl": ""
   },
   {
     "id": 3,
     "name": "Ernir",
-    "lat": null,
-    "lng": null,
+    "lat": 65.81178094510767,
+    "lng": -16.369628906250004,
     "facebookUrl": ""
   },
   {
     "id": 4,
     "name": "Þríhyrningur",
-    "lat": null,
-    "lng": null,
+    "lat": 64.67091929440798,
+    "lng": -21.247558593750004,
     "facebookUrl": ""
   },
   {
     "id": 5,
     "name": "Bjólfell",
-    "lat": null,
-    "lng": null,
+    "lat": 64.52954819942195,
+    "lng": -20.961914062500004,
     "facebookUrl": ""
   },
   {
     "id": 6,
     "name": "Laufafell",
-    "lat": 63.9151,
-    "lng": -19.3435,
+    "lat": 63.9150392550799,
+    "lng": -19.351043701171875,
     "facebookUrl": ""
   },
   {
     "id": 7,
     "name": "Kirkjufell",
-    "lat": null,
-    "lng": null,
+    "lat": 64.63329214257159,
+    "lng": -14.304199218750002,
     "facebookUrl": ""
   },
   {
     "id": 8,
     "name": "Hattfell",
-    "lat": null,
-    "lng": null,
+    "lat": 64.56731900988225,
+    "lng": -11.337890625,
     "facebookUrl": ""
   },
   {
@@ -107,8 +107,8 @@
   {
     "id": 16,
     "name": "Drangshlíðarfjall",
-    "lat": null,
-    "lng": null,
+    "lat": 62.22699603631975,
+    "lng": -30.739746093750004,
     "facebookUrl": ""
   },
   {
@@ -121,8 +121,8 @@
   {
     "id": 18,
     "name": "Krakatindur",
-    "lat": null,
-    "lng": null,
+    "lat": 62.88520467163244,
+    "lng": -17.446289062500004,
     "facebookUrl": ""
   },
   {
@@ -135,8 +135,8 @@
   {
     "id": 20,
     "name": "Löðmundur",
-    "lat": 64.0647,
-    "lng": -19.1913,
+    "lat": 63.704722429433225,
+    "lng": -29.531250000000004,
     "facebookUrl": ""
   },
   {
@@ -261,8 +261,8 @@
   {
     "id": 38,
     "name": "Strútur",
-    "lat": null,
-    "lng": null,
+    "lat": 65.20388994565877,
+    "lng": -19.072265625000004,
     "facebookUrl": ""
   },
   {
@@ -275,8 +275,8 @@
   {
     "id": 40,
     "name": "Skyggnir",
-    "lat": null,
-    "lng": null,
+    "lat": 65.0421332752882,
+    "lng": -18.566894531250004,
     "facebookUrl": ""
   },
   {
@@ -289,8 +289,8 @@
   {
     "id": 42,
     "name": "Trippafjallatindur",
-    "lat": null,
-    "lng": null,
+    "lat": 64.84884607624132,
+    "lng": -22.148437500000004,
     "facebookUrl": ""
   },
   {
@@ -310,8 +310,8 @@
   {
     "id": 45,
     "name": "Hengill/Skeggi",
-    "lat": null,
-    "lng": null,
+    "lat": 64.34002931639449,
+    "lng": -18.676757812500004,
     "facebookUrl": ""
   },
   {
