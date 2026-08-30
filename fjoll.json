@@ -1,0 +1,835 @@
+[
+  {
+    "id": 1,
+    "name": "Selsundsfjall",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 2,
+    "name": "Faxi",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 3,
+    "name": "Ernir",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 4,
+    "name": "Þríhyrningur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 5,
+    "name": "Bjólfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 6,
+    "name": "Laufafell",
+    "lat": 63.9151,
+    "lng": -19.3435,
+    "facebookUrl": ""
+  },
+  {
+    "id": 7,
+    "name": "Kirkjufell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 8,
+    "name": "Hattfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 9,
+    "name": "Valahnúkar",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 10,
+    "name": "Hekla",
+    "lat": 63.9922,
+    "lng": -19.6658,
+    "facebookUrl": ""
+  },
+  {
+    "id": 11,
+    "name": "Tindgilsfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 12,
+    "name": "Stóra-Grænafjall",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 13,
+    "name": "Háskerðingur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 14,
+    "name": "Rauðfossafjöll",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 15,
+    "name": "Helgafell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 16,
+    "name": "Drangshlíðarfjall",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 17,
+    "name": "Skarðsfjall",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 18,
+    "name": "Krakatindur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 19,
+    "name": "Vífilsfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 20,
+    "name": "Löðmundur",
+    "lat": 64.0647,
+    "lng": -19.1913,
+    "facebookUrl": ""
+  },
+  {
+    "id": 21,
+    "name": "Brattháls",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 22,
+    "name": "Mælifell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 23,
+    "name": "Stórhöfði",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 24,
+    "name": "Esja",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 25,
+    "name": "Móskarðshnúkar",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 26,
+    "name": "Herbjarnarfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 27,
+    "name": "Torfajökull",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 28,
+    "name": "Stóri Meitill",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 29,
+    "name": "Fagrafell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 30,
+    "name": "Skarðsmýrarfjall",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 31,
+    "name": "Sauðleysur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 32,
+    "name": "Mófell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 33,
+    "name": "Stóra Reykjafell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 34,
+    "name": "Höttur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 35,
+    "name": "Hrafnabjörg",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 36,
+    "name": "Sultarfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 37,
+    "name": "Skálafell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 38,
+    "name": "Strútur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 39,
+    "name": "Botnafjall",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 40,
+    "name": "Skyggnir",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 41,
+    "name": "Litlimeitill",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 42,
+    "name": "Trippafjallatindur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 43,
+    "name": "Geitafell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 44,
+    "name": "Hagafell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 45,
+    "name": "Hengill/Skeggi",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 46,
+    "name": "Einhyrningur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 47,
+    "name": "Þorbjörn",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 48,
+    "name": "Syðri Háganga",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 49,
+    "name": "Grettir",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 50,
+    "name": "Snæfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 51,
+    "name": "Sveinstindur",
+    "lat": 64.145,
+    "lng": -18.53,
+    "facebookUrl": "https://www.facebook.com/photo/?fbid=2348027302030137&set=pcb.2348027522030115"
+  },
+  {
+    "id": 52,
+    "name": "Reykjafjall",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 53,
+    "name": "Skerinef",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 54,
+    "name": "Grímansfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 55,
+    "name": "Kerhólakambur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 56,
+    "name": "Háalda",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 57,
+    "name": "Tindafjall",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 58,
+    "name": "Tindastóll",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 59,
+    "name": "Háhyrna",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 60,
+    "name": "Jónsvarða",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 61,
+    "name": "Meradalahnúkar",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 62,
+    "name": "Stórasúla",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 63,
+    "name": "Illasúla",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 64,
+    "name": "Halldórsfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 65,
+    "name": "Hlíðarfjall",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 66,
+    "name": "Fögrufjöll",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 67,
+    "name": "Sandfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 68,
+    "name": "Hvalfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 69,
+    "name": "Ingólfsfjall",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 70,
+    "name": "Suðurnámur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 71,
+    "name": "Tjaldafell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 72,
+    "name": "Rauðnefsstaðafjall",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 73,
+    "name": "Valafell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 74,
+    "name": "Ófæruhöfði",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 75,
+    "name": "Hvanngilshnausar",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 76,
+    "name": "Molddadalahnúkar",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 77,
+    "name": "Guðrúnartindur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 78,
+    "name": "Nesjaskyggnir",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 79,
+    "name": "Hengill",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 80,
+    "name": "Rauðölduhnúkur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 81,
+    "name": "Rauðöldur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 82,
+    "name": "Sindri",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 83,
+    "name": "Kerlingar",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 84,
+    "name": "Gjátindur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 85,
+    "name": "Hellufjall",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 86,
+    "name": "Endafell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 87,
+    "name": "Skalli",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 88,
+    "name": "Gráskalli",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 89,
+    "name": "Bláhnúkur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 90,
+    "name": "Snjóalda",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 91,
+    "name": "Langafell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 92,
+    "name": "Hádegisfjall",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 93,
+    "name": "Snjóölduhorn",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 94,
+    "name": "Hrómundartindur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 95,
+    "name": "Litlhöfði",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 96,
+    "name": "Sandfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 97,
+    "name": "Hábarmur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 98,
+    "name": "Svartafell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 99,
+    "name": "Botnsúlur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 100,
+    "name": "Kaldaklofsfjöll",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 101,
+    "name": "Arnarfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 102,
+    "name": "Búrfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 103,
+    "name": "Höskuldsbjalli",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 104,
+    "name": "Langalda",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 105,
+    "name": "Helgafell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 106,
+    "name": "Raufarfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 107,
+    "name": "Rauðafell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 108,
+    "name": "Keilir",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 109,
+    "name": "Hamrafel",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 110,
+    "name": "Norðurnámur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 111,
+    "name": "Útigönguhöfði",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 112,
+    "name": "Einstigsfjall",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 113,
+    "name": "Súlur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 114,
+    "name": "Ýmir",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 115,
+    "name": "Ásgrindur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 116,
+    "name": "Næfurholtsfjöll",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 117,
+    "name": "Bláfell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 118,
+    "name": "Illihnúkur",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  },
+  {
+    "id": 119,
+    "name": "Valafell",
+    "lat": null,
+    "lng": null,
+    "facebookUrl": ""
+  }
+]

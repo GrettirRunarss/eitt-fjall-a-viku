@@ -9,172 +9,137 @@
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#142033}
 .app{display:grid;grid-template-columns:280px 1fr;height:100vh}
-.side{background:#fff;border-right:1px solid #dbe3ef;padding:12px;overflow:auto}
+.side{background:white;border-right:1px solid #dbe3ef;padding:12px;overflow:auto}
 h1{font-size:1.2rem;margin:0 0 8px}
-p{line-height:1.42;margin:0 0 12px}
-.help{background:#eef6ff;border:1px solid #bfd9ff;padding:11px;border-radius:12px;margin-bottom:12px;font-size:.92rem}
-.search{width:100%;padding:10px 12px;border:1px solid #ccd7e5;border-radius:10px;margin-bottom:10px}
-.stat{font-weight:700;margin:8px 0 12px}
-.row{border:1px solid #dbe3ef;border-radius:11px;padding:8px 9px;margin:5px 0;background:#fbfcff;cursor:grab;user-select:none}
-.row:active{cursor:grabbing}
+p{font-size:.92rem;line-height:1.4;margin:0 0 10px}
+.help{background:#eef6ff;border:1px solid #bfd9ff;padding:9px;border-radius:10px;margin-bottom:10px;font-size:.88rem}
+.search{width:100%;padding:9px;border:1px solid #ccd7e5;border-radius:9px;margin-bottom:8px}
+.btn{width:100%;border:0;border-radius:9px;padding:10px;font-weight:700;cursor:pointer;margin-bottom:8px}
+.save{background:#1877f2;color:white}
+.row{border:1px solid #dbe3ef;border-radius:10px;padding:8px 9px;margin:5px 0;background:#fbfcff;cursor:grab;user-select:none}
 .row.placed{background:#f1fff5;border-color:#a9d8b6}
-.name{font-weight:700}
-.meta{font-size:.86rem;color:#607389;margin-top:3px}
+.name{font-weight:700}.meta{font-size:.82rem;color:#607389;margin-top:3px}
 #map{width:100%;height:100%}
-.leaflet-tooltip.mountain-label{font-weight:700;background:white;border:1px solid #6d7f91;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.leaflet-tooltip.mountain-label{font-weight:700;background:#fff;border:1px solid #6d7f91}
 .popupbtn{display:inline-block;background:#1877f2;color:#fff;text-decoration:none;padding:8px 10px;border-radius:8px;margin-top:8px;font-weight:700}
 .smallbtn{border:0;background:#eef1f5;padding:7px 9px;border-radius:8px;cursor:pointer;margin-top:8px}
-@media(max-width:800px){.app{grid-template-columns:1fr;grid-template-rows:45vh 55vh}.side{border-right:0;border-bottom:1px solid #dbe3ef}}
+.status{font-size:.84rem;margin-bottom:8px}
+@media(max-width:800px){.app{grid-template-columns:1fr;grid-template-rows:42vh 58vh}.side{border-right:0;border-bottom:1px solid #dbe3ef}}
 </style>
 </head>
 <body>
 <div class="app">
 <aside class="side">
 <h1>Eitt fjall á viku</h1>
-<div class="help"><b>Dragðu fjallanafnið</b> úr listanum og slepptu því á réttan stað á kortinu. Síðan geturðu líka dregið punktinn sjálfan til að fínstilla staðsetninguna.</div>
+<p>Dragðu fjöll á kortið. Staðsetningar á GitHub birtast á öllum tækjum.</p>
+<div class="help"><b>Vinnuferli:</b> færa fjöll → ýta á „Vista staðsetningar“ → setja niðurhalaða <code>fjoll.json</code> í GitHub repository-ið.</div>
 <input id="search" class="search" placeholder="Leita að fjalli…">
-<div id="stat" class="stat"></div>
+<button id="saveBtn" class="btn save">Vista staðsetningar</button>
+<div id="status" class="status"></div>
 <div id="list"></div>
 </aside>
 <main id="map"></main>
 </div>
-
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-const mountains = [{"id": 1, "name": "Selsundsfjall", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 2, "name": "Faxi", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 3, "name": "Ernir", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 4, "name": "Þríhyrningur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 5, "name": "Bjólfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 6, "name": "Laufafell", "lat": 63.9151, "lng": -19.3435, "facebookUrl": ""}, {"id": 7, "name": "Kirkjufell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 8, "name": "Hattfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 9, "name": "Valahnúkar", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 10, "name": "Hekla", "lat": 63.9922, "lng": -19.6658, "facebookUrl": ""}, {"id": 11, "name": "Tindgilsfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 12, "name": "Stóra-Grænafjall", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 13, "name": "Háskerðingur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 14, "name": "Rauðfossafjöll", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 15, "name": "Helgafell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 16, "name": "Drangshlíðarfjall", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 17, "name": "Skarðsfjall", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 18, "name": "Krakatindur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 19, "name": "Vífilsfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 20, "name": "Löðmundur", "lat": 64.0647, "lng": -19.1913, "facebookUrl": ""}, {"id": 21, "name": "Brattháls", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 22, "name": "Mælifell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 23, "name": "Stórhöfði", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 24, "name": "Esja", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 25, "name": "Móskarðshnúkar", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 26, "name": "Herbjarnarfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 27, "name": "Torfajökull", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 28, "name": "Stóri Meitill", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 29, "name": "Fagrafell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 30, "name": "Skarðsmýrarfjall", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 31, "name": "Sauðleysur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 32, "name": "Mófell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 33, "name": "Stóra Reykjafell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 34, "name": "Höttur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 35, "name": "Hrafnabjörg", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 36, "name": "Sultarfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 37, "name": "Skálafell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 38, "name": "Strútur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 39, "name": "Botnafjall", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 40, "name": "Skyggnir", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 41, "name": "Litlimeitill", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 42, "name": "Trippafjallatindur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 43, "name": "Geitafell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 44, "name": "Hagafell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 45, "name": "Hengill/Skeggi", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 46, "name": "Einhyrningur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 47, "name": "Þorbjörn", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 48, "name": "Syðri Háganga", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 49, "name": "Grettir", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 50, "name": "Snæfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 51, "name": "Sveinstindur", "lat": 64.145, "lng": -18.53, "facebookUrl": "https://www.facebook.com/photo/?fbid=2348027302030137&set=pcb.2348027522030115"}, {"id": 52, "name": "Reykjafjall", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 53, "name": "Skerinef", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 54, "name": "Grímansfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 55, "name": "Kerhólakambur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 56, "name": "Háalda", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 57, "name": "Tindafjall", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 58, "name": "Tindastóll", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 59, "name": "Háhyrna", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 60, "name": "Jónsvarða", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 61, "name": "Meradalahnúkar", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 62, "name": "Stórasúla", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 63, "name": "Illasúla", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 64, "name": "Halldórsfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 65, "name": "Hlíðarfjall", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 66, "name": "Fögrufjöll", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 67, "name": "Sandfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 68, "name": "Hvalfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 69, "name": "Ingólfsfjall", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 70, "name": "Suðurnámur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 71, "name": "Tjaldafell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 72, "name": "Rauðnefsstaðafjall", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 73, "name": "Valafell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 74, "name": "Ófæruhöfði", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 75, "name": "Hvanngilshnausar", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 76, "name": "Molddadalahnúkar", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 77, "name": "Guðrúnartindur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 78, "name": "Nesjaskyggnir", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 79, "name": "Hengill", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 80, "name": "Rauðölduhnúkur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 81, "name": "Rauðöldur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 82, "name": "Sindri", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 83, "name": "Kerlingar", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 84, "name": "Gjátindur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 85, "name": "Hellufjall", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 86, "name": "Endafell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 87, "name": "Skalli", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 88, "name": "Gráskalli", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 89, "name": "Bláhnúkur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 90, "name": "Snjóalda", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 91, "name": "Langafell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 92, "name": "Hádegisfjall", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 93, "name": "Snjóölduhorn", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 94, "name": "Hrómundartindur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 95, "name": "Litlhöfði", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 96, "name": "Sandfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 97, "name": "Hábarmur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 98, "name": "Svartafell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 99, "name": "Botnsúlur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 100, "name": "Kaldaklofsfjöll", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 101, "name": "Arnarfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 102, "name": "Búrfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 103, "name": "Höskuldsbjalli", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 104, "name": "Langalda", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 105, "name": "Helgafell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 106, "name": "Raufarfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 107, "name": "Rauðafell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 108, "name": "Keilir", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 109, "name": "Hamrafel", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 110, "name": "Norðurnámur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 111, "name": "Útigönguhöfði", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 112, "name": "Einstigsfjall", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 113, "name": "Súlur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 114, "name": "Ýmir", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 115, "name": "Ásgrindur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 116, "name": "Næfurholtsfjöll", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 117, "name": "Bláfell", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 118, "name": "Illihnúkur", "lat": null, "lng": null, "facebookUrl": ""}, {"id": 119, "name": "Valafell", "lat": null, "lng": null, "facebookUrl": ""}];
+let mountains=[];
+const map=L.map('map').setView([64.7,-18.7],6);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+const markerById=new Map();
 
-const map = L.map('map').setView([64.7,-18.7],6);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 18,
-  attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
+async function loadData(){
+  const r=await fetch('fjoll.json?ts='+Date.now());
+  mountains=await r.json();
 
-const markerById = new Map();
-
-function save() {
-  localStorage.setItem('fjoll119', JSON.stringify(mountains));
-}
-
-function loadSaved() {
-  try {
-    const saved = JSON.parse(localStorage.getItem('fjoll119') || 'null');
-    if (Array.isArray(saved) && saved.length === mountains.length) {
-      for (let i=0;i<mountains.length;i++) {
-        mountains[i].lat = saved[i].lat;
-        mountains[i].lng = saved[i].lng;
-      }
+  // Merge in unsaved work from this browser, if present.
+  try{
+    const local=JSON.parse(localStorage.getItem('fjoll119')||'null');
+    if(Array.isArray(local)){
+      const byId=new Map(local.map(x=>[x.id,x]));
+      mountains=mountains.map(m=>{
+        const x=byId.get(m.id);
+        return x ? {...m,lat:x.lat,lng:x.lng,facebookUrl:x.facebookUrl||m.facebookUrl} : m;
+      });
     }
-  } catch(e) {}
+  }catch(e){}
+  restoreMarkers(); renderList();
 }
 
-function popupHtml(m) {
-  const fb = m.facebookUrl
-    ? `<a class="popupbtn" href="${m.facebookUrl}" target="_blank" rel="noopener">Opna 360° á Facebook</a>`
-    : `<div style="margin-top:8px;color:#6f7d8b">360° link vantar</div>`;
-  return `<b>${m.id}. ${m.name}</b><br>
-          ${m.lat?.toFixed(5) || ''}, ${m.lng?.toFixed(5) || ''}<br>
-          ${fb}<br>
-          <button class="smallbtn" onclick="removeMountain(${m.id})">Fjarlægja punkt</button>`;
+function saveLocal(){ localStorage.setItem('fjoll119',JSON.stringify(mountains)); }
+
+function popupHtml(m){
+ const fb=m.facebookUrl
+  ? `<a class="popupbtn" href="${m.facebookUrl}" target="_blank" rel="noopener">Opna 360° á Facebook</a>`
+  : `<div style="margin-top:8px;color:#6f7d8b">360° link vantar</div>`;
+ return `<b>${m.id}. ${m.name}</b><br>${m.lat?.toFixed(5)||''}, ${m.lng?.toFixed(5)||''}<br>${fb}<br>
+ <button class="smallbtn" onclick="removeMountain(${m.id})">Fjarlægja punkt</button>`;
 }
 
-function createOrMoveMarker(m, latlng) {
-  m.lat = latlng.lat;
-  m.lng = latlng.lng;
-
-  let marker = markerById.get(m.id);
-  if (!marker) {
-    marker = L.marker(latlng, {draggable:true}).addTo(map);
-    marker.bindTooltip(m.name, {
-      permanent: true,
-      direction: 'top',
-      offset: [0,-10],
-      className:'mountain-label'
-    });
-    marker.on('dragend', e => {
-      const p = e.target.getLatLng();
-      m.lat = p.lat; m.lng = p.lng;
-      marker.setPopupContent(popupHtml(m));
-      save(); renderList(document.getElementById('search').value);
-    });
-    markerById.set(m.id, marker);
-  } else {
-    marker.setLatLng(latlng);
-  }
-  marker.setPopupContent(popupHtml(m));
-  save();
-  renderList(document.getElementById('search').value);
+function createOrMoveMarker(m,latlng){
+ m.lat=latlng.lat; m.lng=latlng.lng;
+ let marker=markerById.get(m.id);
+ if(!marker){
+   marker=L.marker(latlng,{draggable:true}).addTo(map);
+   marker.bindTooltip(m.name,{permanent:true,direction:'top',offset:[0,-10],className:'mountain-label'});
+   marker.on('dragend',e=>{
+     const p=e.target.getLatLng(); m.lat=p.lat; m.lng=p.lng;
+     marker.setPopupContent(popupHtml(m)); saveLocal(); renderList(search.value);
+   });
+   markerById.set(m.id,marker);
+ }else marker.setLatLng(latlng);
+ marker.setPopupContent(popupHtml(m));
+ saveLocal(); renderList(search.value);
 }
 
-window.removeMountain = function(id) {
-  const m = mountains.find(x=>x.id===id);
-  const marker = markerById.get(id);
-  if(marker) { map.removeLayer(marker); markerById.delete(id); }
-  m.lat = null; m.lng = null;
-  save(); renderList(document.getElementById('search').value);
+window.removeMountain=id=>{
+ const m=mountains.find(x=>x.id===id), marker=markerById.get(id);
+ if(marker){map.removeLayer(marker);markerById.delete(id)}
+ m.lat=null;m.lng=null;saveLocal();renderList(search.value);
 };
 
-function restoreMarkers() {
-  mountains.forEach(m => {
-    if(m.lat !== null && m.lng !== null) {
-      createOrMoveMarker(m, L.latLng(m.lat,m.lng));
-    }
-  });
+function restoreMarkers(){
+ mountains.forEach(m=>{
+   if(m.lat!==null&&m.lng!==null) createOrMoveMarker(m,L.latLng(m.lat,m.lng));
+ });
 }
 
-function renderList(filter='') {
-  const q = filter.trim().toLowerCase();
-  const list = document.getElementById('list');
-  list.innerHTML = '';
-  let shown=0, placed=0;
-  mountains.forEach(m => {
-    if(m.lat!==null && m.lng!==null) placed++;
-    if(q && !m.name.toLowerCase().includes(q)) return;
-    shown++;
-    const row = document.createElement('div');
-    row.className = 'row' + (m.lat!==null ? ' placed':'');
-    row.draggable = true;
-    row.dataset.id = m.id;
-    row.innerHTML = `<div class="name">${m.id}. ${m.name}</div>
-      <div class="meta">${m.lat!==null ? '✓ staðsett – dragðu punktinn til að færa' : 'Dragðu á kortið'}</div>`;
-    row.addEventListener('dragstart', e => {
-      e.dataTransfer.setData('text/plain', String(m.id));
-      e.dataTransfer.effectAllowed = 'move';
-    });
-    row.addEventListener('click', () => {
-      const marker = markerById.get(m.id);
-      if(marker) {
-        map.setView(marker.getLatLng(), 11);
-        marker.openPopup();
-      }
-    });
-    list.appendChild(row);
-  });
-  document.getElementById('stat').textContent = `${placed} af ${mountains.length} fjöllum staðsett · ${shown} sýnd`;
+function renderList(filter=''){
+ const q=filter.trim().toLowerCase(), list=document.getElementById('list');
+ list.innerHTML=''; let placed=0,shown=0;
+ mountains.forEach(m=>{
+   if(m.lat!==null&&m.lng!==null) placed++;
+   if(q&&!m.name.toLowerCase().includes(q)) return;
+   shown++;
+   const row=document.createElement('div');
+   row.className='row'+(m.lat!==null?' placed':'');
+   row.draggable=true;
+   row.innerHTML=`<div class="name">${m.id}. ${m.name}</div><div class="meta">${m.lat!==null?'✓ staðsett':'Dragðu á kortið'}</div>`;
+   row.addEventListener('dragstart',e=>{e.dataTransfer.setData('text/plain',String(m.id));e.dataTransfer.effectAllowed='move'});
+   row.onclick=()=>{const marker=markerById.get(m.id);if(marker){map.setView(marker.getLatLng(),11);marker.openPopup()}};
+   list.appendChild(row);
+ });
+ status.textContent=`${placed} af ${mountains.length} staðsett`;
 }
 
-const mapEl = document.getElementById('map');
-mapEl.addEventListener('dragover', e => {
-  e.preventDefault();
-  e.dataTransfer.dropEffect = 'move';
-});
-mapEl.addEventListener('drop', e => {
-  e.preventDefault();
-  const id = Number(e.dataTransfer.getData('text/plain'));
-  const m = mountains.find(x=>x.id===id);
-  if(!m) return;
-
-  const rect = mapEl.getBoundingClientRect();
-  const point = L.point(e.clientX - rect.left, e.clientY - rect.top);
-  const latlng = map.containerPointToLatLng(point);
-  createOrMoveMarker(m, latlng);
-  const marker = markerById.get(id);
-  if(marker) marker.openPopup();
+const mapEl=document.getElementById('map');
+mapEl.addEventListener('dragover',e=>{e.preventDefault();e.dataTransfer.dropEffect='move'});
+mapEl.addEventListener('drop',e=>{
+ e.preventDefault();const id=Number(e.dataTransfer.getData('text/plain')),m=mountains.find(x=>x.id===id);
+ if(!m)return;
+ const rect=mapEl.getBoundingClientRect(),pt=L.point(e.clientX-rect.left,e.clientY-rect.top);
+ createOrMoveMarker(m,map.containerPointToLatLng(pt));
+ const marker=markerById.get(id);if(marker)marker.openPopup();
 });
 
-loadSaved();
-restoreMarkers();
-renderList();
-document.getElementById('search').addEventListener('input', e=>renderList(e.target.value));
+saveBtn.addEventListener('click',()=>{
+ const blob=new Blob([JSON.stringify(mountains,null,2)],{type:'application/json'});
+ const url=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=url;a.download='fjoll.json';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+ status.textContent='Vistað. Settu nýju fjoll.json skrána í GitHub til að samstilla öll tæki.';
+});
+
+search.addEventListener('input',e=>renderList(e.target.value));
+loadData().catch(err=>{status.textContent='Gat ekki lesið fjoll.json. Opnaðu síðuna í gegnum GitHub Pages.'});
 </script>
 </body>
 </html>
