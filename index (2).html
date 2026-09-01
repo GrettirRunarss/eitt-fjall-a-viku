@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="is">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Eitt fjall á viku</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;font-family:Arial,sans-serif;background:#f5f7fb;color:#142033}
+body{-webkit-tap-highlight-color:transparent}
+.app{display:grid;grid-template-columns:300px minmax(0,1fr);height:100vh;height:100dvh}
+.side{background:#fff;border-right:1px solid #dbe3ef;padding:14px;overflow:auto;overscroll-behavior:contain}
+h1{font-size:1.3rem;margin:0 0 7px}
+.intro{font-size:.92rem;line-height:1.4;margin:0 0 11px;color:#435269}
+.search{width:100%;padding:10px 11px;border:1px solid #c7d3e2;border-radius:9px;font-size:16px;margin-bottom:8px}
+.status{font-size:.84rem;color:#607389;margin:2px 0 9px}
+.row{border:1px solid #dbe3ef;border-radius:9px;padding:8px 9px;margin:5px 0;background:#fbfcff;cursor:pointer;user-select:none}
+.row:hover{background:#f4f7fb}
+.name{font-weight:700}
+.meta{font-size:.8rem;color:#607389;margin-top:2px}
+#map{width:100%;height:100%;min-height:260px}
+.leaflet-tooltip.mountain-label{font-weight:700;background:#fff;border:1px solid #6d7f91;color:#142033}
+.photo-link{
+  color:#142033;
+  background:transparent;
+  border:0;
+  padding:0;
+  margin:0;
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.photo-link:visited{color:#142033}
+.photo-link:hover{color:#142033;text-decoration-thickness:2px}
+.photo-link:focus-visible{outline:2px solid #142033;outline-offset:3px;border-radius:2px}
+.no-photo{margin-top:7px;color:#6f7d8b;font-size:.9rem}
+.popup-title{font-size:1rem;font-weight:700;margin-bottom:7px}
+@media(max-width:800px){
+  .app{grid-template-columns:1fr;grid-template-rows:40dvh 60dvh}
+  .side{border-right:0;border-bottom:1px solid #dbe3ef;padding:11px}
+  h1{font-size:1.15rem}
+  .intro{font-size:.86rem;margin-bottom:8px}
+  .row{padding:7px 8px}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <h1>Eitt fjall á viku</h1>
+    <p class="intro">Leitaðu að fjalli eða smelltu á nafn til að finna það á kortinu.</p>
+    <input id="search" class="search" type="search" placeholder="Leita að fjalli…" autocomplete="off">
+    <div id="status" class="status"></div>
+    <div id="list"></div>
+  </aside>
+  <main id="map" aria-label="Kort af fjöllum"></main>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+let mountains=[];
+const markerById=new Map();
+const map=L.map('map',{zoomControl:true}).setView([64.7,-18.7],6);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  maxZoom:18,
+  attribution:'&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+function esc(s){
+  return String(s??'').replace(/[&<>"']/g,c=>({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  }[c]));
+}
+
+function popupHtml(m){
+  const link=m.facebookUrl
+    ? `<a class="photo-link" href="${esc(m.facebookUrl)}" target="_blank" rel="noopener noreferrer">Skoða mynd</a>`
+    : `<div class="no-photo">Mynd vantar</div>`;
+  return `<div class="popup-title">${m.id}. ${esc(m.name)}</div>${link}`;
+}
+
+function renderList(filter=''){
+  const q=filter.trim().toLocaleLowerCase('is');
+  const list=document.getElementById('list');
+  list.innerHTML='';
+  let shown=0;
+  let withPhoto=0;
+
+  mountains.forEach(m=>{
+    if(m.facebookUrl) withPhoto++;
+    if(q && !m.name.toLocaleLowerCase('is').includes(q) && !String(m.id).includes(q)) return;
+    shown++;
+
+    const row=document.createElement('div');
+    row.className='row';
+    row.tabIndex=0;
+    row.innerHTML=`<div class="name">${m.id}. ${esc(m.name)}</div><div class="meta">${m.facebookUrl?'Mynd tengd':'Mynd vantar'}</div>`;
+
+    const open=()=>{
+      const marker=markerById.get(m.id);
+      if(marker){
+        map.setView(marker.getLatLng(),11,{animate:true});
+        marker.openPopup();
+      }
+    };
+    row.addEventListener('click',open);
+    row.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+    list.appendChild(row);
+  });
+
+  document.getElementById('status').textContent =
+    `${mountains.length} fjöll · ${withPhoto} með mynd`;
+}
+
+async function loadData(){
+  const response=await fetch('./fjoll.json?ts='+Date.now(),{cache:'no-store'});
+  if(!response.ok) throw new Error('Gat ekki lesið fjoll.json');
+  mountains=await response.json();
+
+  const bounds=[];
+  mountains.forEach(m=>{
+    if(Number.isFinite(m.lat) && Number.isFinite(m.lng)){
+      const marker=L.marker([m.lat,m.lng],{
+        draggable:false,
+        keyboard:true,
+        title:m.name
+      }).addTo(map);
+      marker.bindTooltip(m.name,{
+        permanent:false,
+        direction:'top',
+        offset:[0,-10],
+        className:'mountain-label'
+      });
+      marker.bindPopup(popupHtml(m));
+      markerById.set(m.id,marker);
+      bounds.push([m.lat,m.lng]);
+    }
+  });
+
+  if(bounds.length){
+    map.fitBounds(bounds,{padding:[25,25],maxZoom:7});
+  }
+  renderList();
+  setTimeout(()=>map.invalidateSize(),100);
+}
+
+document.getElementById('search').addEventListener('input',e=>renderList(e.target.value));
+
+loadData().catch(err=>{
+  document.getElementById('status').textContent='Gat ekki hlaðið fjallagögnunum.';
+  console.error(err);
+});
+</script>
+</body>
+</html>
