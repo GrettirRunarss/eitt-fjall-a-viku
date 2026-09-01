@@ -1,0 +1,835 @@
+[
+  {
+    "id": 1,
+    "name": "Selsundsfjall",
+    "lat": 63.930583846182664,
+    "lng": -19.91254806518555,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1362278047271739&set=pcb.1362198180613059"
+  },
+  {
+    "id": 2,
+    "name": "Faxi",
+    "lat": 63.841500912270995,
+    "lng": -19.43086624145508,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1366413740191503&set=pcb.1366416693524541"
+  },
+  {
+    "id": 3,
+    "name": "Ernir",
+    "lat": 66.14524205544778,
+    "lng": -23.266983032226566,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1374960456003498&set=pcb.1374962826003261"
+  },
+  {
+    "id": 4,
+    "name": "Þríhyrningur",
+    "lat": 63.85519528228871,
+    "lng": -19.934692382812504,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1377762589056618&set=pcb.1377762785723265"
+  },
+  {
+    "id": 5,
+    "name": "Bjólfell",
+    "lat": 63.98575029169137,
+    "lng": -19.887485504150394,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1383423921823818&set=pcb.1383424228490454"
+  },
+  {
+    "id": 6,
+    "name": "Laufafell",
+    "lat": 63.9150392550799,
+    "lng": -19.351043701171875,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1389867864512757&set=pcb.1389868174512726"
+  },
+  {
+    "id": 7,
+    "name": "Kirkjufell",
+    "lat": 63.98198555005983,
+    "lng": -18.95004272460938,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1395547877278089&set=pcb.1395548087278068"
+  },
+  {
+    "id": 8,
+    "name": "Hattfell",
+    "lat": 63.791130076949266,
+    "lng": -19.352588653564457,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1400109986821878&set=pcb.1400110133488530"
+  },
+  {
+    "id": 9,
+    "name": "Valahnúkar",
+    "lat": 64.10722911104942,
+    "lng": -19.43515777587891,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1409356142563929&set=pcb.1409356292563914"
+  },
+  {
+    "id": 10,
+    "name": "Hekla",
+    "lat": 63.99237500608818,
+    "lng": -19.665184020996097,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1412713975561479&set=pcb.1412714998894710"
+  },
+  {
+    "id": 11,
+    "name": "Tindgilsfell",
+    "lat": 63.96955830630474,
+    "lng": -19.89984512329102,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1420629921436551&set=pcb.1420630271436516"
+  },
+  {
+    "id": 12,
+    "name": "Stóra-Grænafjall",
+    "lat": 63.83669495412277,
+    "lng": -19.34040069580078,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1424676771031866&set=pcb.1424676864365190"
+  },
+  {
+    "id": 13,
+    "name": "Háskerðingur",
+    "lat": 63.89317925393686,
+    "lng": -19.12247657775879,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2360890414077159&set=pcb.2360892567410277"
+  },
+  {
+    "id": 14,
+    "name": "Rauðfossafjöll",
+    "lat": 63.98748190265658,
+    "lng": -19.39670562744141,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1438340969665446&set=pcb.1438341196332090"
+  },
+  {
+    "id": 15,
+    "name": "Helgafell",
+    "lat": 64.01005831324966,
+    "lng": -21.85043334960938,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1701073316725542&set=pcb.1701073456725528"
+  },
+  {
+    "id": 16,
+    "name": "Drangshlíðarfjall",
+    "lat": 63.53149549839292,
+    "lng": -19.53351974487305,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1704074946425379&set=pcb.1704075246425349"
+  },
+  {
+    "id": 17,
+    "name": "Skarðsfjall",
+    "lat": 64.01867016866791,
+    "lng": -20.129871368408207,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1714176095415264&set=pcb.1714176292081911"
+  },
+  {
+    "id": 18,
+    "name": "Krakatindur",
+    "lat": 64.01261582263454,
+    "lng": -19.470691680908207,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1720627034770170&set=pcb.1720638348102372"
+  },
+  {
+    "id": 19,
+    "name": "Vífilsfell",
+    "lat": 64.03881679531611,
+    "lng": -21.55397415161133,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1725958794236994&set=pcb.1725958940903646"
+  },
+  {
+    "id": 20,
+    "name": "Löðmundur",
+    "lat": 64.0643174878529,
+    "lng": -19.191055297851566,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1730785430420997&set=pcb.1730790140420526"
+  },
+  {
+    "id": 21,
+    "name": "Brattháls",
+    "lat": 63.84763015608184,
+    "lng": -19.251308441162113,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1735058473327026&set=pcb.1735059263326947"
+  },
+  {
+    "id": 22,
+    "name": "Mælifell",
+    "lat": 63.800453577096924,
+    "lng": -18.93716812133789,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1744320239067516&set=pcb.1744320859067454"
+  },
+  {
+    "id": 23,
+    "name": "Stórhöfði",
+    "lat": 64.00735010687984,
+    "lng": -19.187107086181644,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1750331495133057&set=pcb.1750331581799715"
+  },
+  {
+    "id": 24,
+    "name": "Esja",
+    "lat": 64.2453406784881,
+    "lng": -21.655941009521488,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1753025324863674&set=pcb.1753027061530167"
+  },
+  {
+    "id": 25,
+    "name": "Móskarðshnúkar",
+    "lat": 64.24459476798192,
+    "lng": -21.515178680419925,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1764047480428125&set=pcb.1764047697094770"
+  },
+  {
+    "id": 26,
+    "name": "Herbjarnarfell",
+    "lat": 64.0794791478824,
+    "lng": -19.263668060302738,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1772107809622092&set=pcb.1772108429622030"
+  },
+  {
+    "id": 27,
+    "name": "Torfajökull",
+    "lat": 63.9053761386113,
+    "lng": -18.998107910156254,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=1777718099061063&set=pcb.1777719202394286"
+  },
+  {
+    "id": 28,
+    "name": "Stóri Meitill",
+    "lat": 64.00020219045764,
+    "lng": -21.431751251220707,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2013877758778428&set=pcb.2013877942111743"
+  },
+  {
+    "id": 29,
+    "name": "Fagrafell",
+    "lat": 63.624914468040174,
+    "lng": -19.96147155761719,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2016962181803319&set=pcb.2016962231803314"
+  },
+  {
+    "id": 30,
+    "name": "Skarðsmýrarfjall",
+    "lat": 64.04524111115326,
+    "lng": -21.335449218750004,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2022866831212854&set=pcb.2022867007879503"
+  },
+  {
+    "id": 31,
+    "name": "Sauðleysur",
+    "lat": 64.05188928328641,
+    "lng": -19.33928489685059,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2025152330984304&set=pcb.2025152577650946"
+  },
+  {
+    "id": 32,
+    "name": "Mófell",
+    "lat": 63.82961697061029,
+    "lng": -19.519958496093754,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2030543417111862&set=pcb.2030543523778518"
+  },
+  {
+    "id": 33,
+    "name": "Stóra Reykjafell",
+    "lat": 64.02878288682885,
+    "lng": -21.390380859375004,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2038460529653484&set=pcb.2038460656320138"
+  },
+  {
+    "id": 34,
+    "name": "Höttur",
+    "lat": 65.12474978065855,
+    "lng": -14.447193145751955,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2041723699327167&set=pcb.2041723789327158"
+  },
+  {
+    "id": 35,
+    "name": "Hrafnabjörg",
+    "lat": 64.08353086717332,
+    "lng": -19.33456420898438,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2045710472261823&set=pcb.2045711982261672"
+  },
+  {
+    "id": 36,
+    "name": "Sultarfell",
+    "lat": 63.82999551744096,
+    "lng": -19.493007659912113,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2053934444772759&set=pcb.2053935771439293"
+  },
+  {
+    "id": 37,
+    "name": "Skálafell",
+    "lat": 63.99222446182906,
+    "lng": -21.32454872131348,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2059370537562483&set=pcb.2059370987562438"
+  },
+  {
+    "id": 38,
+    "name": "Strútur",
+    "lat": 63.83915479900814,
+    "lng": -18.93579483032227,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2063846240448246&set=pcb.2063846447114892"
+  },
+  {
+    "id": 39,
+    "name": "Botnafjall",
+    "lat": 63.95102016250037,
+    "lng": -19.857273101806644,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2068573286642208&set=pcb.2068574689975401"
+  },
+  {
+    "id": 40,
+    "name": "Skyggnir",
+    "lat": 63.85958212331176,
+    "lng": -19.485540390014652,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2074548496044687&set=pcb.2074549089377961"
+  },
+  {
+    "id": 41,
+    "name": "Litlimeitill",
+    "lat": 63.97581027653499,
+    "lng": -21.435527801513675,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2289973084502226&set=pcb.2289974711168730"
+  },
+  {
+    "id": 42,
+    "name": "Trippafjallatindur",
+    "lat": 63.95448757787582,
+    "lng": -19.74397659301758,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2294642240701977&set=pcb.2294642580701943"
+  },
+  {
+    "id": 43,
+    "name": "Geitafell",
+    "lat": 63.94031369337124,
+    "lng": -21.52307510375977,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2306522382847296&set=pcb.2306522506180617"
+  },
+  {
+    "id": 44,
+    "name": "Hagafell",
+    "lat": 63.892386084130116,
+    "lng": -19.34280395507813,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2312183492281185&set=pcb.2312184082281126"
+  },
+  {
+    "id": 45,
+    "name": "Hengill/Skeggi",
+    "lat": 64.0890072542193,
+    "lng": -21.31793975830078,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2316856018480599&set=pcb.2316856281813906"
+  },
+  {
+    "id": 46,
+    "name": "Einhyrningur",
+    "lat": 63.76640409477982,
+    "lng": -18.755893707275394,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2323167074516160&set=pcb.2323168354516032"
+  },
+  {
+    "id": 47,
+    "name": "Þorbjörn",
+    "lat": 63.864497597524185,
+    "lng": -22.440776824951175,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2327800114052856&set=pcb.2327800934052774"
+  },
+  {
+    "id": 48,
+    "name": "Syðri Háganga",
+    "lat": 64.53818403183656,
+    "lng": -18.21670532226563,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2330691640430370&set=pcb.2330692207096980"
+  },
+  {
+    "id": 49,
+    "name": "Grettir",
+    "lat": 64.03817803977768,
+    "lng": -18.51402282714844,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2338071566359044&set=pcb.2338072509692283"
+  },
+  {
+    "id": 50,
+    "name": "Snæfell",
+    "lat": 64.74793610330123,
+    "lng": -15.605482487917973,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2343455465820654&set=pcb.2343456889153845"
+  },
+  {
+    "id": 51,
+    "name": "Sveinstindur",
+    "lat": 64.10535498509685,
+    "lng": -18.41720581054688,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2348027215363479&set=pcb.2348027522030115"
+  },
+  {
+    "id": 52,
+    "name": "Reykjafjall",
+    "lat": 64.01393209647495,
+    "lng": -21.157779693603516,
+    "facebookUrl": ""
+  },
+  {
+    "id": 53,
+    "name": "Skerinef",
+    "lat": 63.88316856361961,
+    "lng": -19.122905731201172,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2360891597410374&set=pcb.2360892567410277"
+  },
+  {
+    "id": 54,
+    "name": "Grímansfell",
+    "lat": 64.1601023158386,
+    "lng": -21.53251647949219,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2578498912316307&set=pcb.2578499112316287"
+  },
+  {
+    "id": 55,
+    "name": "Kerhólakambur",
+    "lat": 64.23780605733872,
+    "lng": -21.748466491699222,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2583203755179156&set=pcb.2583204028512462"
+  },
+  {
+    "id": 56,
+    "name": "Háalda",
+    "lat": 63.99162227668525,
+    "lng": -19.159984588623047,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2588354081330790&set=pcb.2588354904664041"
+  },
+  {
+    "id": 57,
+    "name": "Tindafjall",
+    "lat": 63.949361681633484,
+    "lng": -18.786106109619144,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2595544810611717&set=pcb.2595545710611627"
+  },
+  {
+    "id": 58,
+    "name": "Tindastóll",
+    "lat": 65.77989911742289,
+    "lng": -19.722690582275394,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2600566553442876&set=pcb.2600566936776171"
+  },
+  {
+    "id": 59,
+    "name": "Háhyrna",
+    "lat": 64.73730074170709,
+    "lng": -17.98521995544434,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2603195913179940&set=pcb.2603196186513246"
+  },
+  {
+    "id": 60,
+    "name": "Jónsvarða",
+    "lat": 63.92590628347535,
+    "lng": -19.23036575317383,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2610416035791261&set=pcb.2610416745791190"
+  },
+  {
+    "id": 61,
+    "name": "Meradalahnúkar",
+    "lat": 64.09088248159692,
+    "lng": -21.40342712402344,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2616368855195979&set=pcb.2616369698529228"
+  },
+  {
+    "id": 62,
+    "name": "Stórasúla",
+    "lat": 63.82810274647354,
+    "lng": -19.246673569795565,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2620720601427471&set=pcb.2620721834760681"
+  },
+  {
+    "id": 63,
+    "name": "Illasúla",
+    "lat": 63.830449780999544,
+    "lng": -19.32392118942447,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2620721421427389&set=pcb.2620721834760681"
+  },
+  {
+    "id": 64,
+    "name": "Halldórsfell",
+    "lat": 63.96729822829311,
+    "lng": -18.846187577363928,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2626269500872581&set=pcb.2626270184205846"
+  },
+  {
+    "id": 65,
+    "name": "Hlíðarfjall",
+    "lat": 65.66559663194518,
+    "lng": -18.260478973388675,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2626269500872581&set=pcb.2626270184205846"
+  },
+  {
+    "id": 66,
+    "name": "Fögrufjöll",
+    "lat": 64.14857764753508,
+    "lng": -18.302192687988285,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2634834923349372&set=pcb.2634835740015957"
+  },
+  {
+    "id": 67,
+    "name": "Sandfell",
+    "lat": 63.86963903412615,
+    "lng": -19.01235579025455,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2638230873009777&set=pcb.2638233769676154"
+  },
+  {
+    "id": 68,
+    "name": "Hvalfell",
+    "lat": 64.38640209982981,
+    "lng": -21.20996475219727,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2643699242462940&set=pcb.2643700372462827"
+  },
+  {
+    "id": 69,
+    "name": "Ingólfsfjall",
+    "lat": 63.98085602873732,
+    "lng": -21.038818359375004,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2833980890101440&set=pcb.2833989656767230"
+  },
+  {
+    "id": 70,
+    "name": "Suðurnámur",
+    "lat": 64.00306157646422,
+    "lng": -19.1023063659668,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2839648049534724&set=pcb.2839648499534679"
+  },
+  {
+    "id": 71,
+    "name": "Tjaldafell",
+    "lat": 64.00862901482863,
+    "lng": -19.14350509643555,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2839647872868075&set=pcb.2839648499534679"
+  },
+  {
+    "id": 72,
+    "name": "Rauðnefsstaðafjall",
+    "lat": 63.82348380285516,
+    "lng": -19.785346984863285,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2843574255808770&set=pcb.2843575119142017"
+  },
+  {
+    "id": 73,
+    "name": "Valafell",
+    "lat": 64.10033170478887,
+    "lng": -19.516181945800785,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2843574949142034&set=pcb.2843575119142017"
+  },
+  {
+    "id": 74,
+    "name": "Ófæruhöfði",
+    "lat": 63.856859337026705,
+    "lng": -19.164791107177738,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2847558108743718&set=pcb.2847558922076970"
+  },
+  {
+    "id": 75,
+    "name": "Hvanngilshnausar",
+    "lat": 63.8285191560203,
+    "lng": -19.188051223754886,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2847558038743725&set=pcb.2847558922076970"
+  },
+  {
+    "id": 76,
+    "name": "Molddadalahnúkar",
+    "lat": 64.03389424238858,
+    "lng": -21.25064849853516,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2855343951298467&set=pcb.2855344274631768"
+  },
+  {
+    "id": 77,
+    "name": "Guðrúnartindur",
+    "lat": 63.83491616312396,
+    "lng": -19.582271575927738,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2857711947728334&set=pcb.2857713087728220"
+  },
+  {
+    "id": 78,
+    "name": "Nesjaskyggnir",
+    "lat": 64.08638172363491,
+    "lng": -21.29098892211914,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2865340480298814&set=pcb.2865340786965450"
+  },
+  {
+    "id": 79,
+    "name": "Hengill",
+    "lat": 64.08390599654476,
+    "lng": -21.316394805908207,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2865340566965472&set=pcb.2865340786965450"
+  },
+  {
+    "id": 80,
+    "name": "Rauðölduhnúkur",
+    "lat": 63.97317407388972,
+    "lng": -19.811611175537113,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2870861039746758&set=pcb.2870861666413362"
+  },
+  {
+    "id": 81,
+    "name": "Rauðöldur",
+    "lat": 63.98145844578612,
+    "lng": -19.81264114379883,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2870860669746795&set=pcb.2870861666413362"
+  },
+  {
+    "id": 82,
+    "name": "Sindri",
+    "lat": 63.80697061608286,
+    "lng": -19.559612274169925,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2883465718486290&set=pcb.2883466701819525"
+  },
+  {
+    "id": 83,
+    "name": "Kerlingar",
+    "lat": 64.39753122058228,
+    "lng": -17.998008728027347,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2891751327657729&set=pcb.2891751830991012"
+  },
+  {
+    "id": 84,
+    "name": "Gjátindur",
+    "lat": 63.993955671861904,
+    "lng": -18.579082489013675,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2899369853562543&set=pcb.2899370683562460"
+  },
+  {
+    "id": 85,
+    "name": "Hellufjall",
+    "lat": 63.87387242668239,
+    "lng": -19.668445587158207,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2902655209900674&set=pcb.2902655839900611"
+  },
+  {
+    "id": 86,
+    "name": "Endafell",
+    "lat": 63.882715164884,
+    "lng": -19.638748168945316,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=2902655546567307&set=pcb.2902655839900611"
+  },
+  {
+    "id": 87,
+    "name": "Skalli",
+    "lat": 63.953733828446424,
+    "lng": -19.042568206787113,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3013230258843168&set=pcb.3013230515509809"
+  },
+  {
+    "id": 88,
+    "name": "Gráskalli",
+    "lat": 63.95953717571569,
+    "lng": -19.111232757568363,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3013230072176520&set=pcb.3013230515509809"
+  },
+  {
+    "id": 89,
+    "name": "Bláhnúkur",
+    "lat": 63.97626217204686,
+    "lng": -19.067287445068363,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3181430282023164&set=pcb.3181430995356426"
+  },
+  {
+    "id": 90,
+    "name": "Snjóalda",
+    "lat": 64.06581901041177,
+    "lng": -18.857173919677738,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3187374004762125&set=pcb.3187380451428147"
+  },
+  {
+    "id": 91,
+    "name": "Langafell",
+    "lat": 64.00057844217571,
+    "lng": -19.83942031860352,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3198006523698873&set=pcb.3198006770365515"
+  },
+  {
+    "id": 92,
+    "name": "Hádegisfjall",
+    "lat": 63.995987825096414,
+    "lng": -19.858303070068363,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3198005673698958&set=pcb.3198006770365515"
+  },
+  {
+    "id": 93,
+    "name": "Snjóölduhorn",
+    "lat": 64.11599834221924,
+    "lng": -18.710918426513675,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3187380201428172&set=pcb.3187380451428147"
+  },
+  {
+    "id": 94,
+    "name": "Hrómundartindur",
+    "lat": 64.07291261022267,
+    "lng": -21.206188201904297,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3205494999616692&set=pcb.3205495936283265"
+  },
+  {
+    "id": 95,
+    "name": "Litlhöfði",
+    "lat": 63.989702724965994,
+    "lng": -19.24435615539551,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3212535368912655&set=pcb.3212535622245963"
+  },
+  {
+    "id": 96,
+    "name": "Sandfell",
+    "lat": 64.77244258057195,
+    "lng": -19.70981597900391,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3215413221958203&set=pcb.3215413515291507"
+  },
+  {
+    "id": 97,
+    "name": "Hábarmur",
+    "lat": 63.94076616219383,
+    "lng": -18.976821899414066,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3226299624202896&set=pcb.3226300860869439"
+  },
+  {
+    "id": 98,
+    "name": "Svartafell",
+    "lat": 63.834329515912295,
+    "lng": -18.847818374633793,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3240380022794856&set=pcb.3240380692794789"
+  },
+  {
+    "id": 99,
+    "name": "Botnsúlur",
+    "lat": 64.33738035965735,
+    "lng": -21.162414550781254,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3250166775149514&set=pcb.3250167025149489"
+  },
+  {
+    "id": 100,
+    "name": "Kaldaklofsfjöll",
+    "lat": 63.887248818809304,
+    "lng": -19.14556476135912,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3253126908186834&set=pcb.3253127524853439"
+  },
+  {
+    "id": 101,
+    "name": "Arnarfell",
+    "lat": 64.69532697050475,
+    "lng": -18.663797378540043,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3258500224316169&set=pcb.3258500327649492"
+  },
+  {
+    "id": 102,
+    "name": "Búrfell",
+    "lat": 64.03697563673502,
+    "lng": -19.92954254150391,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3376294115870112&set=pcb.3376294359203421"
+  },
+  {
+    "id": 103,
+    "name": "Höskuldsbjalli",
+    "lat": 63.982060849859394,
+    "lng": -19.75324630737305,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3533587810140741&set=pcb.3533588430140679"
+  },
+  {
+    "id": 104,
+    "name": "Langalda",
+    "lat": 63.97694000162763,
+    "lng": -19.781913757324222,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3533588113474044&set=pcb.3533588430140679"
+  },
+  {
+    "id": 105,
+    "name": "Helgafell",
+    "lat": 64.15871811183273,
+    "lng": -21.616115570068363,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3563175210515334&set=pcb.3563175700515285"
+  },
+  {
+    "id": 106,
+    "name": "Raufarfell",
+    "lat": 63.56223613165891,
+    "lng": -19.58270072937012,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3567633423402846&set=pcb.3567634320069423"
+  },
+  {
+    "id": 107,
+    "name": "Rauðafell",
+    "lat": 63.558338036300775,
+    "lng": -19.585018157958988,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3567633736736148&set=pcb.3567634320069423"
+  },
+  {
+    "id": 108,
+    "name": "Keilir",
+    "lat": 63.94136944259119,
+    "lng": -22.171783447265625,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3578410245658497&set=pcb.3578410578991797"
+  },
+  {
+    "id": 109,
+    "name": "Hamrafel",
+    "lat": 64.19472234506138,
+    "lng": -18.555307388305668,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3584649898367865&set=pcb.3584650345034487"
+  },
+  {
+    "id": 110,
+    "name": "Norðurnámur",
+    "lat": 64.02028694582874,
+    "lng": -19.015102386474613,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3589905401175648&set=pcb.3589906011175587"
+  },
+  {
+    "id": 111,
+    "name": "Útigönguhöfði",
+    "lat": 63.85716188185521,
+    "lng": -19.137668609619144,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3599897340176454&set=pcb.3599898376843017"
+  },
+  {
+    "id": 112,
+    "name": "Einstigsfjall",
+    "lat": 63.83945753429025,
+    "lng": -19.132432937622074,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3599897790176409&set=pcb.3599898376843017"
+  },
+  {
+    "id": 113,
+    "name": "Súlur",
+    "lat": 65.60394856200267,
+    "lng": -18.199024200439457,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3608495089316679&set=pcb.3608495342649987"
+  },
+  {
+    "id": 114,
+    "name": "Ýmir",
+    "lat": 63.787339154896465,
+    "lng": -19.566650390625004,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3617337351765786&set=pcb.3617341508432037"
+  },
+  {
+    "id": 115,
+    "name": "Ásgrindur",
+    "lat": 63.805379385134586,
+    "lng": -19.5802116394043,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3617337935099061&set=pcb.3617341508432037"
+  },
+  {
+    "id": 116,
+    "name": "Næfurholtsfjöll",
+    "lat": 64.03682533271088,
+    "lng": -19.769725799560547,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3624979061001615&set=pcb.3624979897668198"
+  },
+  {
+    "id": 117,
+    "name": "Bláfell",
+    "lat": 64.48906363267687,
+    "lng": -19.86001968383789,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3630918397074348&set=pcb.3630918723740982"
+  },
+  {
+    "id": 118,
+    "name": "Illihnúkur",
+    "lat": 63.93548690459449,
+    "lng": -18.929100036621097,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3639773986188789&set=pcb.3639776796188508"
+  },
+  {
+    "id": 119,
+    "name": "Valafell",
+    "lat": 63.812955870773514,
+    "lng": -19.725608825683597,
+    "facebookUrl": "https://www.facebook.com/photo?fbid=3647099958789525&set=pcb.3647100692122785"
+  }
+]
